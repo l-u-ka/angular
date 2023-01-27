@@ -25,6 +25,22 @@ export class NoteService {
     return this.http.get<Note>(this.url, {
       params: new HttpParams().set('id_like', id)
     }); */
+    
+    /*
+    getRemoteData() {
+      return this.http
+        .get("https://www.reddit.com/r/gifs/top/.json?limit=10&sort=hot")
+          .pipe (
+            map ((res: any) => {
+                console.log("Before mapping: ", res);
+                return res.data.children.filter(post => {
+                    return post.data.is_original_content;
+                });
+            })
+        );
+     }
+    
+    */
   }
 
   constructor(private http: HttpClient) { }
