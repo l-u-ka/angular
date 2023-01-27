@@ -1,0 +1,25 @@
+<p >edit-note works!</p>
+
+
+
+<h2>edit note</h2>
+<div class="table">
+    <form [formGroup]="editForm">
+            <div>
+                <label>Title</label>
+                <input formControlName="title" placeholder="title" />
+            </div>
+            <div>
+                <label>content</label>
+                <textarea formControlName="content" placeholder="content"></textarea>
+            </div>
+            <div>
+                <label>Is important</label>
+                <input formControlName="important"  type="checkbox">
+            </div>
+            <div>
+                <button (click)="editNote()">Save</button>
+                <button (click)="cancelEditStudent()">Cancel</button>
+            </div>
+    </form>
+</div>

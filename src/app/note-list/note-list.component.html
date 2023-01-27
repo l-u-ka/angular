@@ -1,0 +1,16 @@
+<table *ngIf="!loading">
+    <tr>
+        <th>Title</th>
+        <th>Create Date</th>
+    </tr>
+    <tr *ngFor="let note of notes" [ngClass]="{important: note.isImportant}">
+        <td>{{ note.title | slice:0:7 }}{{note.title.length > 7 ? '...' : ''}}</td>
+        <td>{{ note.createDate | date: 'dd/MM/yyyy'}} </td>
+        <td><a routerLink="/my-notes/{{note.id}}/edit" routerLinkActive="active" ariaCurrentWhenActive="page">Edit Note</a></td>
+        <router-outlet></router-outlet>
+    </tr>
+</table>
+
+<div *ngIf="loading">
+  Data is loading
+</div>

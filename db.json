@@ -1,0 +1,18 @@
+{
+  "notes": [
+    {
+      "id": "d1c5b038-497b-4adc-bc2c-7b7b00fe6acb",
+      "title": "first note",
+      "content": "hello, this is first note",
+      "isImportant": true,
+      "createDate": "01-20-2023"
+    },
+    {
+      "id": "7c54e06e-a4a2-4a24-8c1b-46b678e7ebe4",
+      "title": "second note",
+      "content": "hello again, this is second note",
+      "isImportant": false,
+      "createDate": "01-20-2023"
+    }
+  ]
+}
