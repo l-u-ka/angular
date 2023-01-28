@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NoteListComponent } from './note-list/note-list.component';
-import { EditNoteComponent } from './edit-note/edit-note.component';
+//import { EditNoteComponent } from './edit-note/edit-note.component';
 
 @NgModule({
   declarations: [
